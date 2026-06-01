@@ -2,6 +2,7 @@ services:
   - type: web
     name: inventory-backend
     env: python
+    plan: free
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
     rootDir: backend
@@ -13,5 +14,6 @@ services:
 
 databases:
   - name: inventory-db
+    plan: free
     databaseName: inventory_db
     user: inventory_user

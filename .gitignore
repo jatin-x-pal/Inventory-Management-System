@@ -1,0 +1,16 @@
+# Node/Vite
+node_modules/
+dist/
+.env.local
+.env.*.local
+
+# Python/FastAPI
+__pycache__/
+*.pyc
+venv/
+env/
+.env
+
+# Docker/General
+.DS_Store
+*.log
